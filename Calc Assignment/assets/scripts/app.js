@@ -25,13 +25,13 @@ function subtract(){
 
 function multiply(){
     const enteredNumber = paseInt(userInput.value);
-    currentResult = currentResult - enteredNumber;
+    currentResult = currentResult * enteredNumber;
     createWriteOutput('*', initialResult, enteredNumber);
 }
 
 function divide(){
     const enteredNumber = paseInt(userInput.value);
-    currentResult = currentResult - enteredNumber;
+    currentResult = currentResult / enteredNumber;
     createWriteOutput('/', initialResult, enteredNumber);
 }
 
