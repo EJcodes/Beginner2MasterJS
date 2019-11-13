@@ -18,19 +18,22 @@ function add() {
 }
 
 function subtract(){
-    const enteredNumber = paseInt(userInput.value);
+    const enteredNumber = getUserNumberInput();
+    initialResult = currentResult;
     currentResult = currentResult - enteredNumber;
     createWriteOutput('-', initialResult, enteredNumber);
 }
 
 function multiply(){
-    const enteredNumber = paseInt(userInput.value);
+    const enteredNumber = getUserNumberInput();
+    initialResult = currentResult;
     currentResult = currentResult * enteredNumber;
     createWriteOutput('*', initialResult, enteredNumber);
 }
 
 function divide(){
-    const enteredNumber = paseInt(userInput.value);
+    const enteredNumber = getUserNumberInput();
+    initialResult = currentResult;
     currentResult = currentResult / enteredNumber;
     createWriteOutput('/', initialResult, enteredNumber);
 }
