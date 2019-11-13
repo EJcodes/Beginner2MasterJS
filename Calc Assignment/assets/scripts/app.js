@@ -24,14 +24,21 @@ function subtract(){
 }
 
 function multiply(){
-
+    const enteredNumber = paseInt(userInput.value);
+    currentResult = currentResult - enteredNumber;
+    createWriteOutput('*', initialResult, enteredNumber);
 }
 
 function divide(){
-
+    const enteredNumber = paseInt(userInput.value);
+    currentResult = currentResult - enteredNumber;
+    createWriteOutput('/', initialResult, enteredNumber);
 }
 
 
 addBtn.addEventListener('click', add);
+subtractBtn.addEventListener('click', subtract);
+multiplyBtn.addEventListener('click', multiply);
+divideBtn.addEventListener('click', divide);
 
 
